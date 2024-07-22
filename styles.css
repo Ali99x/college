@@ -6,7 +6,8 @@ body, html {
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, #0c1d45 0%, #031426 50%, #0b1321 100%);
-    overflow: hidden;
+    overflow: auto; /* السماح بالتمرير */
+
 }
 
 .background {
@@ -35,6 +36,8 @@ body, html {
     text-align: center;
     width: 80%;
     max-width: 600px;
+    overflow-y: auto; /* السماح بالتمرير الرأسي */
+    max-height: 80vh; /* الحد الأقصى للارتفاع للحفاظ على المساحة */
 }
 
 h1 {
@@ -49,7 +52,7 @@ label {
     text-align: right;
 }
 
-input {
+input, select {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -59,12 +62,6 @@ input {
 }
 
 select {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-    box-sizing: border-box;
     background-color: #fff;
     color: #333;
 }
@@ -95,7 +92,6 @@ button:hover {
     direction: rtl;
 }
 
-
 .notification {
     position: fixed;
     top: -50px;
@@ -117,18 +113,6 @@ button:hover {
     opacity: 1;
 }
 
-.department-item {
-    margin-bottom: 10px;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    border-radius: 5px;
-    text-align: right;
-    direction: rtl;
-}
-
-
-/* أسلوب جديد لزر القائمة */
 .menu-button {
     position: fixed;
     top: 20px;
@@ -139,7 +123,6 @@ button:hover {
     color: white;
 }
 
-/* أسلوب القائمة الجانبية */
 .side-menu {
     position: fixed;
     top: 0;
@@ -150,6 +133,7 @@ button:hover {
     padding-top: 50px;
     transition: right 0.3s ease;
     z-index: 1000;
+    overflow-y: auto; /* السماح بالتمرير في القائمة الجانبية */
 }
 
 .side-menu.open {
@@ -173,19 +157,11 @@ button:hover {
     background-color: #555;
 }
 
-
-
-
-
-
-
-
 footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-
     color: #fff; /* لون النص */
     text-align: center;
     padding: 10px 0; /* الحواف العليا والسفلية */
