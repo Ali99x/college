@@ -888,13 +888,12 @@ function showNotification() {
     }, 4000);
 }
 
-// Function to display results
 function displayResults() {
     const city = document.getElementById('city').value;
     const grade = parseFloat(document.getElementById('grade').value);
     const departmentsList = document.getElementById('departments-list');
 
-    if (city && !isNaN(grade) && data[city]) {
+    if (city && !isNaN(grade) && grade >= 50 && grade <= 100 && data[city]) {
         const departments = getDepartmentsByGrade(city, grade);
 
         // Clear previous results
@@ -921,9 +920,10 @@ function displayResults() {
         // Show notification
         showNotification();
     } else {
-        departmentsList.innerHTML = '<p>الرجاء إدخال المعدل واختيار المدينة.</p>';
+        departmentsList.innerHTML = '<p>الرجاء إدخال معدل صحيح بين 50 و 100 واختيار المدينة.</p>';
     }
 }
+
 
 
 
@@ -1012,4 +1012,3 @@ function moveStars() {
 
 initStars();
 moveStars();
-
