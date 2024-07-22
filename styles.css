@@ -39,7 +39,7 @@ body, html {
             direction: rtl; /* اتجاه النصوص بشكل عام من اليمين لليسار */
             
             
-    width: 100%; /* تعيين العرض بناءً على النسبة المئوية */
+    width: 90%; /* تعيين العرض بناءً على النسبة المئوية */
     max-width: 1000px; /* تعيين أقصى عرض للحاوية */
     height: auto;
     max-height: 68vh;
@@ -109,26 +109,45 @@ button:hover {
 
 .notification {
     position: fixed;
-    top: -50px;
+    top: -100px; /* Start position above the viewport */
     left: 50%;
     transform: translateX(-50%);
-    background-color: #333;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
     color: #fff;
-    padding: 15px;
-    border-radius: 5px;
-    font-size: 16px;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 18px;
     text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease, top 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     z-index: 1000;
-    border-width: 0.5px;
-    border-style: solid;
-    border-color: #19347d;
+    transition: top 0.5s ease; /* Smooth transition for sliding effect */
+        backdrop-filter: blur(3px); /* Apply the blur effect */
+
+}
+
+/* Animation for the notification */
+@keyframes slideDownUp {
+    0% {
+        top: -100px;
+    }
+    20% {
+        top: 20px; /* Position the notification slightly below the top */
+    }
+    80% {
+        top: 20px; /* Keep it visible for a moment */
+    }
+    100% {
+        top: -100px;
+    }
 }
 
 .notification.show {
-    top: 22px;
-    opacity: 1; /* تصحيح قيمة opacity */
+    animation: slideDownUp 3s ease; /* Apply the sliding animation */
+}
+
+
+body {
+    animation: fadeInFromTop 2s ease-out;
 }
 
 .menu-button {
