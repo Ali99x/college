@@ -111,8 +111,6 @@ function displayResults() {
 
 
 
-
-
 // Star animation
 const canvas = document.createElement('canvas');
 const ctx = canvas.getContext('2d');
@@ -122,6 +120,7 @@ canvas.height = window.innerHeight;
 
 let stars = [];
 let numStars = 100;
+const starSpeed = 0.7; // قيمة أقل تعني حركة أبطأ
 
 function initStars() {
     for (let i = 0; i < numStars; i++) {
@@ -136,7 +135,7 @@ function initStars() {
 function moveStars() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     for (let i = 0; i < stars.length; i++) {
-        stars[i].z -= 2;
+        stars[i].z -= starSpeed; // استخدم المتغير للتحكم في السرعة
         if (stars[i].z <= 0) {
             stars[i].z = canvas.width;
         }
@@ -160,3 +159,4 @@ function moveStars() {
 
 initStars();
 moveStars();
+
