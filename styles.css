@@ -53,11 +53,22 @@ body, html {
 h1 {
     color: #fff;
     margin-bottom: 20px;
+     font-size: 24px; /* حجم الخط أصغر */
 }
 
 h2 {
     color: #ededed;
     font-size: 16px;
+}
+
+h3 {
+    color: #ff2ea4; /* اللون الأصفر */
+    font-size: 14px; /* حجم الخط أصغر */
+    background: rgba(0, 0, 0, 0.1); /* خلفية خفيفة */
+    padding: 10px; /* إضافة حواف للعنوان */
+    border-radius: 5px; /* زوايا دائرية للخلفية */
+    margin-bottom: 15px; /* مسافة سفلية */
+      margin-top: 0px; /* مسافة سفلية */
 }
 
 label {
