@@ -5,9 +5,8 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #0c1d45 0%, #031426 50%, #0b1321 100%);
-    overflow: auto; /* السماح بالتمرير */
-
+    background: linear-gradient(135deg, #0c1d45 0%, #031426 50%, #0e3661 100%);
+    overflow: hidden; /* منع التمرير على مستوى الصفحة */
 }
 
 .background {
@@ -35,9 +34,9 @@ body, html {
     border: 1px solid rgba(255, 255, 255, 0.3);
     text-align: center;
     width: 80%;
-    max-width: 600px;
-    overflow-y: auto; /* السماح بالتمرير الرأسي */
-    max-height: 80vh; /* الحد الأقصى للارتفاع للحفاظ على المساحة */
+    max-width: 580px;
+    max-height: 90vh; /* أقصى ارتفاع للحاوية بنسبة 90% من ارتفاع النافذة */
+    overflow: auto; /* تفعيل التمرير داخل الحاوية */
 }
 
 h1 {
@@ -133,7 +132,6 @@ button:hover {
     padding-top: 50px;
     transition: right 0.3s ease;
     z-index: 1000;
-    overflow-y: auto; /* السماح بالتمرير في القائمة الجانبية */
 }
 
 .side-menu.open {
@@ -162,17 +160,17 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    color: #fff; /* لون النص */
+    color: #fff;
     text-align: center;
-    padding: 10px 0; /* الحواف العليا والسفلية */
-    font-size: 14px; /* حجم الخط */
+    padding: 10px 0;
+    font-size: 14px;
 }
 
 footer a {
-    color: #ffcc00; /* لون الرابط */
-    text-decoration: none; /* إزالة الخط السفلي من الرابط */
+    color: #ffcc00;
+    text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline; /* إضافة خط سفلي عند التمرير فوق الرابط */
+    text-decoration: underline;
 }
