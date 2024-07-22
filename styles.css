@@ -33,7 +33,7 @@ body, html {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
     text-align: center;
-    width: 80%;
+    width: 60%;
     max-width: 580px;
     max-height: 90vh; /* أقصى ارتفاع للحاوية بنسبة 90% من ارتفاع النافذة */
     overflow: auto; /* تفعيل التمرير داخل الحاوية */
@@ -46,6 +46,11 @@ h1 {
     margin-bottom: 20px;
 }
 
+h2 {
+    color: #ededed;
+    font-size: 16px;
+
+}
 label {
     display: block;
     color: #fff;
@@ -68,11 +73,11 @@ select {
 }
 
 button {
-    width: 100%;
+    width: 70%;
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #4CAF50;
+    background-color: #204099;
     color: white;
     font-size: 16px;
     cursor: pointer;
@@ -80,7 +85,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #581a8f;
 }
 
 .department-item {
@@ -107,11 +112,15 @@ button:hover {
     opacity: 0;
     transition: opacity 0.3s ease, top 0.3s ease;
     z-index: 1000;
+    border-width: 0.5px;
+     border-style: solid;
+  border-color: #19347d; /* red top, green right, blue bottom and yellow left */
+    
 }
 
 .notification.show {
-    top: 20px;
-    opacity: 1;
+    top: 22px;
+    opacity: 2;
 }
 
 .menu-button {
@@ -154,7 +163,7 @@ button:hover {
 }
 
 .side-menu button:hover {
-    background-color: #555;
+    background-color: #ffc400;
 }
 
 footer {
