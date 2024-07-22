@@ -920,10 +920,12 @@ function displayResults() {
         // Show notification
         showNotification();
     } else {
-        departmentsList.innerHTML = '<p>الرجاء إدخال معدل صحيح بين 50 و 100 واختيار المدينة.</p>';
-    }
+      
+
+departmentsList.innerHTML = '<p style="color: #ff63ac;">الرجاء إدخل معدل صحيح واختر المدينة.</p>';
 }
 
+}
 
 
 
