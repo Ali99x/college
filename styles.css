@@ -5,7 +5,9 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #0c1d45 0%, #031426 50%, #0e3661 100%);
+    
+    background: transparent; 
+
     overflow: hidden; /* منع التمرير على مستوى الصفحة */
 }
 
@@ -14,7 +16,10 @@ body, html {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background: linear-gradient(135deg, #0c1d45 0%, #031426 50%, #0e3661 100%);
+    z-index: 0; /* ضبط z-index أقل من glass-container */
 }
+
 
 .stars {
     position: absolute;
