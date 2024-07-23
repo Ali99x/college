@@ -966,8 +966,6 @@ function openPage(url) {
     window.location.href = url;
 }
 
-
-
 // Star animation
 const canvas = document.createElement('canvas');
 const ctx = canvas.getContext('2d');
@@ -1023,9 +1021,3 @@ window.addEventListener('resize', () => {
     canvas.height = window.innerHeight;
     initStars(); // إعادة تهيئة النجوم عند تغيير حجم النافذة
 });
-
-    requestAnimationFrame(moveStars);
-}
-
-initStars();
-moveStars();
