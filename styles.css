@@ -222,4 +222,5 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+     color: #1890db;
 }
