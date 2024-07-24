@@ -885,7 +885,7 @@ function getDepartmentsByGrade(city, grade) {
 function showNotification() {
     const notification = document.createElement('div');
     notification.className = 'notification';
-    notification.textContent = 'هذه الأقسام أقل بـ 5 درجات من معدلك فقط.';
+notification.textContent = ' الأقسام أقل بـ 5 درجات من معدلك';
     document.body.appendChild(notification);
 
     // Animate the notification
