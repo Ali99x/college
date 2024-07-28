@@ -39,8 +39,10 @@ body {
 }
 
 #city, {
+    color: black;
     -webkit-appearance: none;
 }
+
 
 /* شريط التمرير */
 ::-webkit-scrollbar {
