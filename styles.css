@@ -38,6 +38,40 @@ body {
     background: transparent;
 }
 
+#city, {
+    -webkit-appearance: none;
+}
+
+/* شريط التمرير */
+::-webkit-scrollbar {
+    width: 10px; /* عرض الشريط */
+}
+
+/* مسار شريط التمرير */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* لون خلفية المسار */
+    border-radius: 8px; /* زوايا مستديرة للمسار */
+     margin-top: 2px;
+     margin-bottom: ;: 2px;
+
+
+}
+
+/* مسكة شريط التمرير */
+::-webkit-scrollbar-thumb {
+    background: #888; /* لون المسكة */
+    border-radius: 10px; /* زوايا مستديرة للمسكة */
+}
+
+/* مسكة شريط التمرير عند التمرير */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* لون المسكة عند التمرير */
+}
+
+
+
+
+
 
 .glass-container {
     position: relative;
