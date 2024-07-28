@@ -38,7 +38,10 @@ body {
     background: transparent;
 }
 
-#city, {
+#city,
+#university,
+#college ,
+#department {
     color: black;
     -webkit-appearance: none;
 }
