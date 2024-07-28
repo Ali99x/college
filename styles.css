@@ -218,23 +218,21 @@ body {
 }
 
 
-
-  .menu-button {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            font-size: 24px;
-            cursor: pointer;
-            z-index: 1009;
-            color: white;
-
-            transition: transform 1s ease;
-        }
-
-        
-        .menu-button:hover{
-         transform: rotate(180deg);
+.menu-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1009;
+    color: white;
+    transition: transform 0.3s ease;
 }
+
+.menu-button.clicked {
+    transform: rotate(180deg) scale(1.1);
+}
+       
 
 
 
