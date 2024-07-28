@@ -51,7 +51,8 @@ body {
 
 /* مسار شريط التمرير */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; /* لون خلفية المسار */
+      background-color: rgba(0, 0, 0, 0.1);
+
     border-radius: 8px; /* زوايا مستديرة للمسار */
      margin-top: 2px;
      margin-bottom: ;: 2px;
