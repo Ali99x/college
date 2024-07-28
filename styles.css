@@ -217,16 +217,35 @@ body {
     animation: fadeInFromTop 2s ease-out;
 }
 
-.menu-button {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 1000;
-       z-index: 1009;
-    color: white;
+
+
+
+  .menu-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 1009;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.2);
+            border: none; /* حدود بيضاء */
+            padding: 0.6px 4px;
+            border-radius: 5px;
+            transition: transform 1s ease;
+        }
+
+        .menu-button:active {
+            transform: rotate(2160deg);
+        }
+        
+        .menu-button:hover{
+         transform: rotate(40deg);
 }
+
+
+
+
 
 .side-menu {
     position: fixed;
