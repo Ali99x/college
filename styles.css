@@ -101,7 +101,7 @@ body {
             direction: rtl; /* اتجاه النصوص بشكل عام من اليمين لليسار */
             
             
-    width: 97%; /* تعيين العرض بناءً على النسبة المئوية */
+    width: 94%; /* تعيين العرض بناءً على النسبة المئوية */
     height: auto;
     max-height: 68vh;
     overflow: auto;
@@ -157,7 +157,7 @@ select {
  select {
     background-image: url('https://i.ibb.co/vkdXfMz/down-arrow.png'); /* إضافة أيقونة السهم الخاصة بك */
     background-repeat: no-repeat;
-    background-position: calc(100% - 210px) center; /* تحديد مكان الأيقونة */
+    background-position: calc(100% - 220px) center; /* تحديد مكان الأيقونة */
     background-size: 12px; /* حجم الأيقونة */
 }
 /* للتأكد من أن الأيقونة تعمل على جميع المتصفحات */
@@ -167,7 +167,7 @@ select::-ms-expand {
 /* ضبط مكان السهم على الشاشات الصغيرة */
 @media (max-width: 600px) {
     #info-select {
-        background-position: calc(100% - 230px) center; /* تعديل مكان الأيقونة للشاشات الصغيرة */
+        background-position: calc(100% - 270px) center; /* تعديل مكان الأيقونة للشاشات الصغيرة */
     }
 }
 
