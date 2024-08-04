@@ -1,10 +1,5 @@
 
 
-
-
-
-
-
 body, html {
     height: 100%;
     margin: 0;
@@ -15,6 +10,12 @@ body, html {
     background: transparent;
     overflow: hidden;
 }
+
+* {
+                cursor: url('https://i.ibb.co/RvKR9Q1/pen1.png'), auto; /* استخدم مسار الصورة الصحيح */
+
+}
+
 
     /* منع تحديد النصوص */
 body {
@@ -165,7 +166,6 @@ button {
     background-color: #204099;
     color: white;
     font-size: 16px;
-    cursor: pointer;
     margin-top: 20px;
 }
 
@@ -272,7 +272,6 @@ body {
     top: 20px;
     right: 20px;
     font-size: 24px;
-    cursor: pointer;
     z-index: 1009;
     color: white;
     transition: transform 0.3s ease;
