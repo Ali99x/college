@@ -130,20 +130,21 @@ h3 {
     padding: 10px; /* إضافة حواف للعنوان */
     border-radius: 5px; /* زوايا دائرية للخلفية */
     margin-bottom: 15px; /* مسافة سفلية */
-      margin-top: 0px; /* مسافة سفلية */
+      margin-top: 0px; /* مسافة سفلية */ 
 }
 
 label {
     display: block;
     color: #fff;
-    margin-top: 10px;
+    margin-top: 1px;
     text-align: right;
 }
 
 input, select {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin-top: 5px; 0;
+    margin-bottom: 20px; 0;
     border: none;
     border-radius: 5px;
     box-sizing: border-box;
@@ -174,7 +175,7 @@ button:hover {
 }
 
 .department-item {
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     color: #fff;
     background: rgba(0, 0, 0, 0.2);
     padding: 10px;
