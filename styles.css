@@ -282,9 +282,6 @@ body {
 }
        
 
-
-
-
 .side-menu {
     position: fixed;
     top: 0;
@@ -314,9 +311,8 @@ body {
     transition: background-color 0.3s ease;
 }
 
-
 .side-menu button:hover {
-    background-color: #ffc400;
+    background-color: #6e6e6e;
 }
 
 
